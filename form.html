@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <header>
+      <nav><a href="./lab-1.html">Home</a></nav>
+      <h1>Get to know each other</h1>
+    </header>
+    <main>
+      <form method="POST" action="http://localhost:3000/profile">
+        <!--testing success for json server (lab 1 part 2)-->
+        <div>
+          <h2>Who are you?</h2>
+          <label for="fname">First name:</label><br />
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Your first name..."
+          /><br />
+        </div>
+        <div>
+          <label for="lname">Last name:</label><br />
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Your last name..."
+          />
+        </div>
+        <div>
+          <h2>What is your favourite language?</h2>
+          <input type="radio" id="english" name="language" value="english" />
+          <label for="english">English</label><br />
+          <input type="radio" id="korean" name="language" value="korean" />
+          <label for="korean">Korean</label><br />
+          <input type="radio" id="japanese" name="language" value="japanese" />
+          <label for="japanese">Japanese</label>
+        </div>
+        <div>
+          <h2>What is your favourite vehicle?</h2>
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="bike" />
+          <label for="vehicle1"> Bike</label><br />
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="car" />
+          <label for="vehicle2"> Car</label><br />
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="boat" />
+          <label for="vehicle3"> Boat</label>
+        </div>
+        <div>
+          <h2>What is your favourite pet?</h2>
+          <label for="pet-select">Choose a pet:</label>
+          <select name="pets" id="pet-select">
+            <option value="">--Please choose an option--</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+            <option value="spider">Spider</option>
+            <option value="goldfish">Goldfish</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <br />
+        <div><button type="submit">Submit form</button></div>
+      </form>
+    </main>
+    <footer>Copyright 2022 &copy;</footer>
+  </body>
+</html>

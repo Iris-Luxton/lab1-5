@@ -1,0 +1,90 @@
+
+@media screen and (min-width: 640px){
+    .flex-container {
+        display: flex;
+        justify-content: center;
+    }    
+}
+/* Using a media query, we will turn on flexbox when the device width is 640px and above. */
+
+/* This is a helper class, it will set the max-width of the element to 1200px (converted into rem units) */
+.wrapper {
+    max-width: 75rem;
+}
+
+.grid-container-1 {
+    display: grid;
+    grid-column-start: 1fr 1fr 1fr 1fr
+}
+
+
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    shape-outside: circle();
+    clip-path: circle();
+}
+li {
+    display: grid;
+    float: left;
+    border-right: 1px solid #bbb;
+    padding: 5px;  
+    background-color: #420c65;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+    color: brown;
+}
+article {
+    background: #ded5d5;
+}
+
+header {
+    background: white;
+}
+
+article {
+    border: 1px solid black;
+}
+
+section {
+    background: #08524f;
+}
+/* This will ensure that the Sidebar will always be 300px, 
+and the rest of the space will be distributed to the Content section. */
+.sidebar {
+    border: 1px solid #000000;
+    background: #673ab7;
+    flex: auto;
+}
+/* If you set all child elements to have flex: 1 (this is default setting), 
+their widths will be calculated and distributed as evenly as possible. */
+.content {
+    flex: 1;
+}
+
+footer {
+    border: 1px solid #000000;
+    background: #616161;
+}
+
+

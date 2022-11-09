@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+    <title>HTML LAB</title>
+    <meta name="description" content="HTML practice" />
+    <meta name="keywords" content="HTML, web, practice, code" />
+    <meta name="author" content="Iris" />
+    <meta name="copyright" content="Copyright to Iris" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  </head>
+
+  <body>
+    <!--I have tried npx http-server and it works-->
+    <header>
+      <nav><a href="./form.html">Form</a></nav>
+      <nav><a href="./lab-2.html">Lab 2</a></nav>
+      <nav><a href="./lab-3.html">Lab 3</a></nav>
+      <nav><a href="./lab-45.html">My portfolio</a></nav>
+    </header>
+    <main>
+      <h1>Trying out some fun HTML</h1>
+      <!--I notice that if I put h1 and h2 tag in the same <article>, there is no size difference, 
+      but if h1 outside of article and h2 inside article, size difference will become significant-->
+      <article>
+        <h2>Learning elements - div, span, p, pre, ul, li, ol, article</h2>
+        <!--Browsers automatically add some space (margin) before and after each <p> element while, 
+          the <pre> tag defines pre-formatted text. Text in a <pre> element is displayed in a font (usually Courier), 
+          and it preserves both spaces and line breaks-->
+        <p>p represents paragraph</p>
+        <pre>
+        Text in a pre element is displayed in a fixed-width font, 
+        and it preserves both spaces and line breaks
+        </pre>
+        <!--To show that div is box element and span is inline element-->
+        <div>avocado</div>
+        <span>Vietnam origin</span>
+        <span>NZ origin</span>
+        <span>America origin</span>
+
+        <div>kiwi</div>
+        <div>banana</div>
+
+        <ul>
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ul>
+
+        <ol>
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ol>
+      </article>
+
+      <article>
+        <table id="producttable">
+          <thead>
+            <tr>
+              <th colspan="2">First header</th>
+              <th>Second header</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>UPC_Code</td>
+              <td>Product_Name</td>
+              <td rowspan="2">Third cell - first row</td>
+            </tr>
+            <tr>
+              <td>First cell - third row</td>
+              <td>Second cell - third row</td>
+            </tr>
+          </tbody>
+        </table>
+        <img src="https://picsum.photos/200/300" alt="" />
+         <!--Video and audio provided by Sam-->
+        <video controls autoplay width="250">
+          <source src="/video.webm" type="video/webm" />
+          <source src="/video.mp4" type="video/mp4" />
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+        <audio controls autoplay src="/audio.mp3">
+          Your browser does not support the <code>audio</code> element.
+        </audio>
+      </article>
+      <footer>Copyright 2022 &copy;</footer>
+    </main>
+  </body>
+</html>
