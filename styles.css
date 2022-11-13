@@ -1,32 +1,87 @@
+main, header, section, aside, footer, article {
+    margin: 0;
+    padding: 0;
+}
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));;
+    grid-template-rows: minmax(20px, auto);
+    background: #726cb9;
+    padding: 10px;
+    align-items: center;
+    justify-items: center;
+    border: 5px solid #000000;
+    grid-gap: 10px;
+    font-weight: 900;
+    font-size: large;
+    color: #000000;
+}
+.grid-container-2 {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: 
+    "personal-info"
+    "phoneandemail"
+    "skill"
+    "skills";
+    background-color: #726cb9;
+}
+.personal-info {
+    grid-area: "personal-info";
+    display: grid;
+    background-color: #9fa3e6;
+    align-items: center;
+    justify-items: left;
+    font-weight: bolder;
+    padding: auto;
+}
+.phoneandemail {
+    grid-area: "phoneandemail";
+    background-color: aliceblue;
+}
+.skill {
+    grid-area: "skill";
+    display: grid;
+    background-color: #9fa3e6;
+    align-items: center;
+    justify-items: left;
+    font-weight: bolder;
+    padding: auto;
+}
+.skills {
+    grid-area: "skills";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+/* If you set all child elements to have flex: 1 (this is default setting), 
+their widths will be calculated and distributed as evenly as possible. */
+.center {
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+}
 
+/* Using a media query, we will turn on flexbox when the device width is 640px and above. */
 @media screen and (min-width: 640px){
     .flex-container {
         display: flex;
         justify-content: center;
-    }    
+        flex-wrap: wrap;
+    }
 }
-/* Using a media query, we will turn on flexbox when the device width is 640px and above. */
-
 /* This is a helper class, it will set the max-width of the element to 1200px (converted into rem units) */
-.wrapper {
+/* .wrapper {
     max-width: 75rem;
-}
-
-.grid-container-1 {
-    display: grid;
-    grid-column-start: 1fr 1fr 1fr 1fr
-}
-
-
-
-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    height: auto;
-    shape-outside: circle();
-    clip-path: circle();
+} */
+hr {
+    height: 1px;
+    background-color: black;
+    border: none;
 }
 li {
     display: grid;
@@ -35,56 +90,40 @@ li {
     padding: 5px;  
     background-color: #420c65;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
 li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    padding: 30px 120px;
 }
-
 li a:hover {
     background-color: #111;
     color: brown;
 }
-article {
-    background: #ded5d5;
-}
 
-header {
-    background: white;
+img {
+    max-width: 200px;
+    margin: 0 auto;
+    float: none;
+    display: block;
+    border-radius: 50%;
 }
-
-article {
-    border: 1px solid black;
-}
-
-section {
-    background: #08524f;
+.column-1 {
+    flex: 1;
 }
 /* This will ensure that the Sidebar will always be 300px, 
 and the rest of the space will be distributed to the Content section. */
-.sidebar {
+.column-2 {
     border: 1px solid #000000;
     background: #673ab7;
     flex: auto;
 }
-/* If you set all child elements to have flex: 1 (this is default setting), 
-their widths will be calculated and distributed as evenly as possible. */
-.content {
-    flex: 1;
-}
-
 footer {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    padding: 20px;
     border: 1px solid #000000;
-    background: #616161;
+    background: #726cb9;
 }
-
-

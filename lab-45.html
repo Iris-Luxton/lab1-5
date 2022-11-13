@@ -5,7 +5,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>My responsive website</title>
-        <meta name="description" content="Responsive profile" />
+        <meta name="description" content="My profile" />
         <meta name="keywords" content="profile, cv, responsive, website" />
         <meta name="author" content="Iris" />
         <meta name="copyright" content="Copyright to Iris" />
@@ -15,49 +15,108 @@
     <body>
         <header >
             <ul class = "grid-container-1">
-                <li><nav><a href="./lab-1.html">Lab 1</a></nav></li>
-                <li><nav><a href="./form.html">Form</a></nav></li>
-                <li><nav><a href="./lab-2.html">Lab 2</a></nav></li>
-                <li><nav><a href="./lab-3.html">Lab 3</a></nav></li>
+                <li><nav class = "grid-item-1"><a href="./lab-1.html">LAB 1</a></nav></li>
+                <li><nav class = "grid-item-2"><a href="./form.html">FORM LINK</a></nav></li>
+                <li><nav class = "grid-item-3"><a href="./lab-2.html">LAB 2</a></nav></li>
+                <li><nav class = "grid-item-4"><a href="./lab-3.html">LAB 3</a></nav></li>
             </ul>     
         </header>
         <main>
-            <div class="flex-container wrapper">
-                <section class="content">
-                    <div>
-                        Iris Luxton Resume<br>
-                        Personality trait: INTP / INFP
-                    </div>
-                    
-                    <div>
-                         <figure>
-                            <img src="Iris-photo.jpg" alt="Chilling with my kitty">
-                            <figcaption>Chilling with my kitty</figcaption>
-                        </figure>
-                    </div>
-                    <div>
-                       <p>Office hour from <time>9:00</time> to <time>17:00</time> every weekday.</p>
-                       <p>I will be <mark>on leave</mark>  from <time datetime="2022-02-10 6:00">Feb 10th </time>as this is my birthday.</p>
-                    </div>
-                   
+            <div class="flex-container">
+                <section class="column-1">
+                    <p class = "center">Iris Luxton Resume</p><br> 
+                    <figure>
+                        <img class = "center" src="Iris-photo.jpg" alt="Software engineer student">
+                        <br>
+                        <figcaption class = "center">Software engineer student</figcaption>
+                    </figure>
+                    <div class="grid-container-2">
+                        <div class = "personal-info">
+                            Personal info
+                        </div>
+                        <div class = "phoneandemail">
+                            Phone: 
+                            +64 224747102
+                            <br>
+                            Email: 
+                            irisluxton102@gmail.com
+                        </div>
+                        <div class = "skill">
+                            Skills
+                        </div>
+                        <div class = "skills">
+                            <div class = "child1">
+                                HTML<br>
+                                CSS<br>
+                                JAVASCRIPT
+                            </div>
+                            <div class = "child2">
+                                INTERMEDIATE<br>
+                                INTERMEDIATE<br>
+                                STILL LEARNING
+                            </div>
+                        </div> 
+                    </div> 
                 </section>
-             
-                <!-- Sidebar -->
-                <aside class="sidebar">
-                   Experience
-
+                <aside class="column-2">
+                    Recent experience
+                    <dl>
+                        <dt>Frucor Suntory - NPD assistant</dt>
+                        <dd>PD trial new launch, packaging, raw material evaluation
+                        </dd>
+                        <dd>Sensory research support, inventory control and SAP PO raising
+                        </dd>
+                        <br>
+                        <dt>Vitaco Ltd - NPD assistant</dt>
+                        <dd>Central contact for NPD launch and system support, cost saving/business continuity projects
+                        </dd>
+                        <dd>Database management: NCAF, RME, Deviation, NAV, Sharepoint and other Microsoft products
+                        </dd>
+                        <br>
+                        <dt>Pauling Industries Ltd and Phytomed Ltd - Quality officer</dt>
+                        <dd>QA/QC problem solving and documentation, NCR, CAPA, deviation, investigation
+                        </dd>
+                        <dd>SOPs, BMO/BPO update, PPE, H&S, equipment calibration
+                        </dd>
+                        <dd>COA release, compound cleaning validation, ATP/water pH/micro/TDS system/GMP testing</dd>
+                    </dl>
+                    <hr>
+                    Education
+                    <dl>
+                        <dt>Auckland University of Technology</dt>
+                        <dd>Software Engineer Bootcamp</dd> 
+                        <dt>University of Otago</dt>
+                        <dd>Bachelor of Science (BSc) - Pharmacology, Toxicology & Botany</dd>
+                        <dt>International College of Herbal Medicine ICOHM</dt>
+                        <dd>Herbal Medicine Diploma</dd>
+                        <dt>Whanganui High School</dt>
+                        <dd>Secondary Education - NCEA L2&3 Merit Endorsement, International Academic Prefect</dd>
+                    </dl>
+                    <hr>
+                    <p>Office hour from <time>9:00</time> to <time>17:00</time> every weekday.</p>
+                    <p>I will be <mark>on leave</mark>  from <time datetime="2022-02-10 6:00">Feb 10th </time>as this is my birthday.</p>
                 </aside>
             </div>
             <article>
                 <header>
-
+                    <p>Personality trait: INTP / INFP</p>
                 </header>
+                <body>
+                    INFP Personality Type (The Healer)
+                    INFPs are imaginative idealists, guided by their own core values and beliefs. 
+                    For a Healer type, exploring possibilities takes priority over assessing whether something is “realistic” or not. 
+                    They see potential for a better future, and pursue truth and meaning in their own special way.
+                    INFPs are sensitive, caring, and compassionate, and are deeply concerned with the personal growth of themselves and others. 
+                    Individualistic and nonjudgmental, INFPs believe that each person must find their own path. 
+                    They enjoy spending time exploring their own ideas and values, and are gently encouraging to others to do the same.
+                    INFPs are creative and often artistic—they enjoy finding new outlets for self-expression.
+                </body>
                 <details>
                     <summary>Reference</summary>
                     <p>To be provided as per request.</p>
                   </details>
             </article>
         </main>
-        <footer>Copyright 2022 &copy;</footer>  
+        <footer>Created by Iris. Copyright 2022 &copy;</footer>  
     </body>
 </html>
